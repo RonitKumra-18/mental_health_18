@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>My Health Assistant</h1>
+        <form id="journal-form">
+            <textarea 
+                id="journal-entry" 
+                rows="10" 
+                placeholder="How are you feeling today?"
+            ></textarea>
+            <button type="submit">Save Journal</button>
+        </form>
+        <div id="response-card" class="hidden">
+            <h3>Assistant's Reflection:</h3>
+            <p id="response-text"></p>
+        </div>
+        <hr>
+<h2>Past Entries</h2>
+<div id="entries-list">
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
